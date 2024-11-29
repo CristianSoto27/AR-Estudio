@@ -88,14 +88,14 @@
         <a-assets>
             <video id="video1" src="assets/video1.mp4" preload="auto" loop="false" crossorigin webkit-playsinline playsinline></video>
             <video id="video2" src="assets/video2.mp4" preload="auto" loop="false" crossorigin webkit-playsinline playsinline></video>
-            <a-asset-item id="buzz" src="assets/buzz.gltf"></a-asset-item>
+            <a-asset-item id="buzz" src="assets/PesonajeBlender.glb"></a-asset-item>
         </a-assets>
 
         <a-marker id="markerA" type="pattern" url="assets/marker.patt" videohandler>
             <a-entity position="0 0 0">
                 <a-plane position="-7 0 0" rotation="-90 0 0" scale="4 3 0.1" opacity="0" cursor="fuse: true; rayOrigin: mouse; fuseTimeout: 1500" onclick="toggleVideo('#video1')"></a-plane>
                 <a-video id="clickVideo1" src="#video1" scale="4 3 2" position="-3 0 0" rotation="-90 0 0" cursor="fuse: true; rayOrigin: mouse; fuseTimeout: 1500" onclick="toggleVideo('#video1')"></a-video>
-                <a-gltf-model src="#buzz" scale="2 2 2" position="0 0 0" rotation="0 90 -90"></a-gltf-model>
+                <a-gltf-model src="#buzz" scale="2 2 2" position="0 0 2" rotation="270 90 -90"></a-gltf-model>
                 <a-plane position="8 0 0" rotation="-90 0 0" scale="4 3 0.1" opacity="0" cursor="fuse: true; rayOrigin: mouse; fuseTimeout: 1500" onclick="toggleVideo('#video2')"></a-plane>
                 <a-video id="clickVideo2" src="#video2" scale="4 7.11 2" position="3 0 0" rotation="-90 0 0" cursor="fuse: true; rayOrigin: mouse; fuseTimeout: 1500" onclick="toggleVideo('#video2')"></a-video>
             </a-entity>
