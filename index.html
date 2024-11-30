@@ -81,12 +81,12 @@
     <a-scene vr-mode-ui="enabled: false" loading-screen="enabled: false;"
         arjs="sourceType: webcam; debugUIEnabled: false;" id="scene" visible="true" embedded>
         <a-assets>
-            <video id="video1" src="https://www.youtube.com/embed/CcVHfgRVD54?si=Je4lUXGrzvciEjcf"
-                preload="auto" loop="false" crossorigin webkit-playsinline playsinline></video>
-            <video id="video2" src="https://youtube.com/shorts/C-fa-3t7Kz8?feature=share"
-                preload="auto" loop="false" crossorigin webkit-playsinline playsinline></video>
+            <!-- Reemplaza el video1 y video2 con los enlaces embed de YouTube -->
+            <iframe id="video1" src="https://www.youtube.com/embed/CcVHfgRVD54" frameborder="0" allowfullscreen></iframe>
+            <iframe id="video2" src="https://www.youtube.com/embed/C-fa-3t7Kz8" frameborder="0" allowfullscreen></iframe>
             <a-asset-item id="buzz" src="/assets/buzz.gltf"></a-asset-item>
         </a-assets>
+        
 
 
         <a-marker id="markerA" type="pattern" url="/assets/marker.patt" videohandler>
