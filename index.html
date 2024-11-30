@@ -85,12 +85,12 @@
         embedded
     >
         <a-assets>
-            <video id="video1" src="public/assets/video1.mp4" preload="auto" loop="false" crossorigin webkit-playsinline playsinline></video>
-            <video id="video2" src="public/assets/video2.mp4" preload="auto" loop="false" crossorigin webkit-playsinline playsinline></video>
-            <a-asset-item id="buzz" src="public/assets/buzz.gltf"></a-asset-item>
+            <video id="video1" src="/assets/video1.mp4" preload="auto" loop="false" crossorigin webkit-playsinline playsinline></video>
+            <video id="video2" src="/assets/video2.mp4" preload="auto" loop="false" crossorigin webkit-playsinline playsinline></video>
+            <a-asset-item id="buzz" src="/assets/buzz.gltf"></a-asset-item>
         </a-assets>
 
-        <a-marker id="markerA" type="pattern" url="public/assets/marker.patt" videohandler>
+        <a-marker id="markerA" type="pattern" url="/assets/marker.patt" videohandler>
             <a-entity position="0 0 0">
                 <a-plane position="-7 0 0" rotation="-90 0 0" scale="4 3 0.1" opacity="0" cursor="fuse: true; rayOrigin: mouse; fuseTimeout: 1500" onclick="toggleVideo('#video1')"></a-plane>
                 <a-video id="clickVideo1" src="#video1" scale="4 3 2" position="-3 0 0" rotation="-90 0 0" cursor="fuse: true; rayOrigin: mouse; fuseTimeout: 1500" onclick="toggleVideo('#video1')"></a-video>
