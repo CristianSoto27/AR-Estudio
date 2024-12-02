@@ -1,0 +1,14 @@
+{
+    "rewrites": [
+      { "source": "/assets/(.*)", "destination": "/assets/$1" }
+    ],
+    "headers": [
+      {
+        "source": "/assets/(.*)",
+        "headers": [
+          { "key": "Content-Type", "value": "video/mp4" }
+        ]
+      }
+    ]
+  }
+  
